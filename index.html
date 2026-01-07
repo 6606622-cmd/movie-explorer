@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Explorer</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <h1>🎬 Movie Explorer</h1>
+    <p>Search & Discover Movies</p>
+  </header>
+
+  <section class="search-section">
+    <input type="text" id="searchInput" placeholder="Enter movie name..." />
+    <button onclick="searchMovie()">Search</button>
+
+    <select id="sortOption" onchange="sortMovies()">
+      <option value="">Sort By</option>
+      <option value="year">Year</option>
+      <option value="rating">Rating</option>
+    </select>
+  </section>
+
+  <section id="movieContainer" class="movie-container"></section>
+   <h2 class="section-title">Recommended Movies</h2>
+       <div id="recommendContainer" class="movie-grid"></div>
+  <script src="script.js"></script>
+</body>
+</html>
